@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <title>Colapsable y acordeón</title>
+    </head>
+
+    <body>
+        <div class="container mt-5">
+            <!--
+                Botón colapsable
+
+                d-block
+                se utiliza para establecer el elemento seleccionado como un elemento de bloque. Esto significa que el elemento ocupará todo el ancho disponible en su contenedor y, por lo tanto, cualquier elemento que se coloque debajo de él se colocará en la línea siguiente.
+
+                data-toggle
+                Se utiliza para especificar el comportamiento de un elemento al hacer clic en él.
+
+                data-toggle="collapse": indica que el elemento colapsará o expandirá un contenido.
+
+                data-target
+                Se utiliza junto con el atributo data-toggle en elementos interactivos para especificar el destino de la acción que se va a realizar.
+
+                data-target="#colapsable-1"
+                Indica que el div con el id "colapsable-1" debe abrirse o cerrarse
+            -->
+            <button class="btn btn-info d-block mb-4" data-toggle="collapse" data-target="#colapsable-1">
+                Ver más
+            </button>
+
+            <!--colapsable-1 se utiliza como valor del atributo data-target en el tag button-->
+            <div class="collapse mb-5" id="colapsable-1">
+                <div class="card">
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, vitae! Reprehenderit repudiandae voluptatum quasi rem, dicta exercitationem non eligendi, perspiciatis, porro incidunt vel cupiditate at doloremque? Labore, harum? Aperiam, voluptatem.
+                    </div>
+                </div>
+            </div>
+
+            <!--
+            Acordeón
+            accordion se utiliza como valor del atributo data-parent en el tag a
+            -->
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>
+                            <!--
+                            data-parent="#accordion"
+                            Se utiliza para especificar el selector de un elemento que se utilizará como elemento primario para agrupar elementos de menú o acordeón relacionados.
+
+                            data-toggle="collapse": indica que el elemento colapsará o expandirá un contenido.
+                            -->
+                            <a href="#colapse1" data-parent="#accordion" data-toggle="collapse">
+                                Título 1
+                            </a>
+                        </h4>
+                    </div>
+
+                    <!--
+                        colapse1 se utiliza como valor del atributo href en el tag a
+
+                        collapse
+                        Se utiliza para ocultar y mostrar elementos HTML con animaciones. Se utiliza junto con el atributo data-toggle="collapse" para indicar que el elemento HTML se puede ocultar y mostrar.
+                        
+                        show
+                        Se utiliza para mostrar elementos que han sido ocultados mediante JavaScript o CSS. Por ejemplo, si se tiene un elemento colapsable con la clase collapse y se desea mostrarlo programáticamente, se puede agregar la clase show al elemento para que sea visible.
+                    -->
+                    <div id="colapse1" class="collapse show">
+                        <div class="card-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, vitae! Reprehenderit repudiandae voluptatum quasi rem, dicta exercitationem non eligendi, perspiciatis, porro incidunt vel cupiditate at doloremque?
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h4>
+                            <!--
+                            colapse2 es el valor del atributo id en el tag div
+                            accordion es el valor del atributo id en el tag div
+                            -->
+                            <a href="#colapse2" data-parent="#accordion" data-toggle="collapse">
+                                Título 2
+                            </a>
+                        </h4>
+                    </div>
+
+                    <!--colapse2 se utiliza como valor del atributo href en el tag a-->
+                    <div id="colapse2" class="collapse">
+                        <div class="card-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, vitae! Reprehenderit repudiandae voluptatum quasi rem, dicta exercitationem non eligendi, perspiciatis, porro incidunt vel cupiditate at doloremque?
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h4>
+                            <!--
+                            colapse3 es el valor del atributo id en el tag div
+                            accordion es el valor del atributo id en el tag div
+                            -->
+                            <a href="#colapse3" data-parent="#accordion" data-toggle="collapse">
+                                Título 3
+                            </a>
+                        </h4>
+                    </div>
+                    
+                    <!--colapse3 se utiliza como valor del atributo href en el tag a-->
+                    <div id="colapse3" class="collapse">
+                        <div class="card-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, vitae! Reprehenderit repudiandae voluptatum quasi rem, dicta exercitationem non eligendi, perspiciatis, porro incidunt vel cupiditate at doloremque?
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+    </body>
+</html>

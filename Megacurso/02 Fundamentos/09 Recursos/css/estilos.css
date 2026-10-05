@@ -1,0 +1,44 @@
+/*
+De 235px hacia abajo se aplica el background
+*/
+@media(max-width: 235px){
+    body{
+        background: darkblue;
+    }
+}
+
+/*
+De 470px en adelante se aplica el background
+*/
+@media(min-width: 470px){
+    body{
+        background: tomato;
+    }
+}
+
+/*
+De 940px en adelante de aplica el background
+*/
+@media(min-width: 940px){
+    body{
+        background: mediumturquoise;
+    }
+}
+
+/*
+De 1024px en adelante de aplica el background
+*/
+@media(min-width: 1024px){
+    body{
+        background: yellowgreen;
+    }
+}
+
+/*
+De 1360px en adelante de aplica el background
+*/
+@media(min-width: 1360px){
+    body{
+        background: darkred;
+    }
+}

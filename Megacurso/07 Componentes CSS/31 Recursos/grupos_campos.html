@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    
+    <title>Componentes CSS - Alertas</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="alert alert-primary">
+          <p>Alert Primary</p>
+      </div>
+
+      <div class="alert alert-secondary">
+            <p>Alert secondary</p>
+      </div>
+
+       <div class="alert alert-danger">
+             <p>Alert Danger</p>
+       </div>
+
+       <div class="alert alert-success">
+            <p>Alert Success</p>
+      </div>
+
+      <div class="alert alert-info">
+            <p>Alert Info</p>
+      </div>
+
+      <div class="alert alert-warning">
+            <p>Alert Warning</p>
+      </div>
+
+      <div class="alert alert-light">
+            <p>Alert alert-light</p>
+      </div>
+
+      <div class="alert alert-dark">
+            <p>Alert Dark</p>
+      </div>
+
+      <!--
+            alert
+            Se utiliza para crear alertas informativas, que pueden ser de diferentes tipos (success, warning, danger, etc.).
+
+            alert-dismissible
+            Se utiliza para crear una alerta con un botón de cierre (close) para permitir que el usuario cierre la alerta.
+
+            Esta clase se utiliza junto con la clase alert para agregar un botón de cierre a la alerta. El botón de cierre se muestra en la esquina superior derecha de la alerta y permite que el usuario la cierre.
+      -->
+      <div class="alert alert-info alert-dismissible">
+          <!--
+            close
+            Se utiliza para crear el botón "Cerrar" en las alertas y modales. Este botón se utiliza para desactivar o eliminar la alerta o el modal de la pantalla.
+
+            data-dismiss
+            Se utiliza en conjunto con la clase close de Bootstrap 4 para especificar qué acción se debe realizar cuando se hace clic en un botón de cierre.
+
+            data-dismiss="alert" 
+            Cierra la alerta que contiene el botón de cierre.
+          -->  
+          <button class="close" type="button" data-dismiss="alert">
+              <span>&times</span>
+          </button>
+          <strong>Dismissible</strong>Entrada ingresada
+      </div>
+
+      <div class="alert alert-success">
+          <!--
+            alert-heading
+            Se utiliza para definir el encabezado o título de un componente alert. Esta clase se utiliza junto con la clase alert y se utiliza para proporcionar un texto más grande y enfatizado para el título del mensaje de alerta.
+          -->
+          <h4 class="alert-heading">Bienvenidos</h4>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam excepturi voluptate earum voluptatibus possimus error est repellat, a magnam eaque.</p>
+          <hr>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quas.</p>
+      </div>
+    </div>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

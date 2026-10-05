@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <title>Modales</title>
+    </head>
+
+    <body>
+        <div class="container mt-5">
+            <!--
+            Modales
+            Triger modal
+            modal1 esta definido en el tag div en el atributo id
+
+            data-toggle
+            Se utiliza para especificar el comportamiento de un elemento al hacer clic en él.
+
+            data-toggle="modal"
+            Indica que el elemento abrirá un modal.
+            
+            data-target
+            Se utiliza junto con el atributo data-toggle en elementos interactivos para especificar el destino de la acción que se va a realizar
+            
+            Se utiliza para especificar el identificador de un elemento en la misma página que se debe abrir o cerrar.
+
+            data-target="#modal1"
+            Indica que el div con el id modal1 debe abrirse o cerrarse
+            -->
+            <button class="btn btn-success" data-toggle="modal" data-target="#modal1">
+                Lanzar Modal 1
+            </button>
+
+            <!--
+            Modal 1
+            
+            modal
+            Se utiliza para crear un diálogo modal (ventana emergente) en una página web. Los diálogos modales son ventanas emergentes que aparecen encima del contenido de la página y requieren que el usuario interactúe con ellas antes de continuar con la página principal.
+            -->
+            <div class="modal" id="modal1">
+                <!--
+                    modal-dialog
+                    Es utilizada para crear un contenedor para el contenido de un modal o ventana modal. Esta clase define el estilo del contenedor, que generalmente tiene un tamaño fijo y se posiciona en el centro de la pantalla.
+
+                    La clase modal-dialog debe ser usada junto con la clase modal-content, la cual define el contenido del modal. Dentro de la clase modal-dialog se pueden incluir elementos como encabezados, cuerpos de texto, botones, formularios, etc.
+                -->
+                <div class="modal-dialog">
+                    <!--
+                        modal-content
+                        Se utiliza para definir el contenedor principal de un cuadro de diálogo modal. Esta clase se utiliza como un hijo directo de la clase modal-dialog y contiene todo el contenido que se muestra en el modal.
+                    -->
+                    <div class="modal-content">
+                        <!--
+                            modal-header
+                            Se utiliza para definir el encabezado de un cuadro de diálogo modal. Esta clase debe ser utilizada como un elemento secundario directo de div.modal-content y se utiliza para contener cualquier contenido que se desee mostrar en la sección de encabezado del cuadro de diálogo modal.
+                        -->
+                        <div class="modal-header">
+                            <!--
+                                modal-title
+                                Se utiliza para definir el título dentro del encabezado de un cuadro modal. Esta clase se utiliza en combinación con la clase modal-header y debe ser colocada dentro de ella.
+                            -->
+                            <h5 class="modal-title">
+                                Titulo Modal 1
+                            </h5>
+                            <!--
+                                close
+
+                                data-dismiss
+
+                                data-dismiss="modal"
+
+                            -->
+                            <button class="close" data-dismiss="modal">
+                                &times;
+                            </button>
+                        </div>
+                        <!--
+                            modal-body
+                            Se utiliza en la creación de cuadros modales. Se utiliza para definir el contenido que aparecerá en el cuerpo del cuadro modal. Se debe colocar dentro de un elemento con la clase modal-content, que a su vez se debe colocar dentro de un elemento con la clase modal-dialog.
+
+                            En el cuerpo del cuadro modal se pueden incluir distintos tipos de contenido, como texto, formularios, imágenes, etc. El uso de la clase modal-body permite que el contenido se ajuste automáticamente al tamaño del cuadro modal y se adapte a diferentes tamaños de pantalla.
+                        -->
+                        <div class="modal-body">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab est suscipit ea accusantium. Temporibus unde, ut cum magnam fugiat saepe delectus impedit sint suscipit cumque.
+                        </div>
+                        <!--
+                            modal-footer
+                            Es utilizada para crear un área de pie de página dentro de un diálogo modal (modal) de Bootstrap 4. Esta clase se utiliza para agregar botones o cualquier otro contenido que se desee mostrar en la parte inferior del diálogo.
+                        -->
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" data-dismiss="modal">
+                                Cerrar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br><br>
+            
+            <!--
+            Modal 1
+            loginModal esta definido en el tag div en el atributo id
+            -->
+            <button class="btn btn-primary" data-toggle="modal" data-target="#loginModal">
+                Acceder a la aplicación
+            </button>
+
+            <!--loginModal se utiliza en el tag button en el atributo data-target-->
+            <div class="modal" id="loginModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">
+                                Acceder
+                            </h5>
+                            <button class="close" data-dismiss="modal">&times;
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="usuario">
+                                        Usuario
+                                    </label>
+                                    <input type="text" class="form-control" placeholder="Ingresa tu nombre">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="password">
+                                        password
+                                    </label>
+                                    <input type="password" class="form-control" placeholder="Ingresa tu Password">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-primary" data-dismiss="modal">
+                                Acceder
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+        
+        <script>
+            //iniciar INIT el Popover
+            $('[data-toggle="popover"]').popover();
+        </script>
+    </body>
+</html>

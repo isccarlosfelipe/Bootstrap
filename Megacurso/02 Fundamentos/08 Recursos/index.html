@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Fundamentos de Flexbox</title>
+        <style>
+        /*De 768px en adelante regresa verdadero*/
+            @media(min-width: 768px){
+                .contenedor{
+                    display:flex;   /*Activacion de flex*/
+                    /*
+                    Alineacion por renglo
+                    align-items: center;        Alineacion centrada
+                    align-items: flex-end;      Alineacion inferior
+                    align-items: flex-start;    Alineacion superior
+                    align-items: stretch;       Alineacion por defecto
+                    
+                    Alineacion por columnas
+                    flex-direction: column;
+                    flex-direction: column-reverse;
+                    flex-direction: row;
+                    flex-direction: row-reverse;
+                    */
+                }
+
+                .contenedor-2{
+                    display: flex;  /*Activacion de flex*/
+                    /*
+                    justify-content: flex-start;    Alineacion izquierda
+                    justify-content: flex-end;      Alineacion derecha
+                    justify-content: center;        Alineacion centrada
+                    justify-content: space-between; Alineacion con espacios
+                    */
+                    justify-content: space-around;  /*Alineacion con espacios alrededor*/
+                }
+
+                .content-caja{
+                    /*width: 25%;*/
+                    flex-basis: 25%;
+                }
+            }
+
+            .contenedor-3{
+                display: flex;  /*Activacion de flex*/
+                /*
+                flex-wrap: nowrap;  Se mantiene sobre el mismo renglon
+                flex-wrap: wrap;    No se mantiene sobre el mismo renglon
+                flex-wrap: wrap-reverse;    
+                */
+                flex-direction: row-reverse;    /*Se invierte el orden*/
+            }
+            
+
+            .contenedor div, .contenedor-2 div, .contenedor-3 div{
+                border: 1px #ccc solid;
+                padding: 12px;
+                background: #FAFAFA;
+            }
+
+            .caja-1{
+                flex: 2;    /*2 columnas*/
+                order: 2;   /*Posicion 2*/
+            }
+
+            .caja-2{
+                flex: 4;    /*4 columnas*/
+                order: 3;   /*Posicion 3*/
+            }
+
+            .caja-3{
+                flex: 2;    /*2 columnas*/
+                order: 1;   /*Posicion 1*/
+            }    
+
+            .content-caja-3{
+                /*width: 15%;*/
+                flex-basis: 15%;
+            }    
+        </style>
+    </head>
+    <body>
+        <div class="contenedor">
+            <div class="caja-1">
+                <h3>Caja uno</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, excepturi! consectetur adipisicing elit. Tenetur, excepturi!</p>
+            </div>
+            <div class="caja-2">
+                <h3>Caja dos</h3>
+                <p>Lorem ipsum dolor sit amet</p>
+            </div>
+            <div class="caja-3">
+                <h3>Caja tres</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, excepturi!</p>
+            </div>
+        </div>
+        
+        <div class="contenedor-2">
+            <div class="content-caja">
+                <h3>Caja 4</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, excepturi! consectetur adipisicing elit. Tenetur, excepturi!</p>
+            </div>
+            <div class="content-caja">
+                <h3>Caja 5</h3>
+                <p>Lorem ipsum dolor sit amet</p>
+            </div>
+            <div class="content-caja">
+                <h3>Caja 6</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, excepturi!</p>
+            </div>
+        </div>
+        
+        <div class="contenedor-3">
+            <div class="content-caja-3">
+                <h3>Caja 7</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, excepturi! consectetur adipisicing elit. Tenetur, excepturi!</p>
+            </div>
+            <div class="content-caja-3">
+                <h3>Caja 8</h3>
+                <p>Lorem ipsum dolor sit amet</p>
+            </div>
+            <div class="content-caja-3">
+                <h3>Caja 9</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, excepturi!</p>
+            </div>
+        
+            <div class="content-caja-3">
+                <h3>Caja 10</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, excepturi! consectetur adipisicing elit. Tenetur, excepturi!</p>
+            </div>
+            <div class="content-caja-3">
+                <h3>Caja 11</h3>
+                <p>Lorem ipsum dolor sit amet</p>
+            </div>
+            <div class="content-caja-3">
+                <h3>Caja 12</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, excepturi!</p>
+            </div>
+        </div>
+    </body>
+</html>

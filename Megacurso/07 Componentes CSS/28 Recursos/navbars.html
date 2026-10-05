@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!--Iconos font awesome-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <title>Navbars en Bootstrap 4</title>
+    </head>
+
+    <body>
+        <!--
+        Barra navbar simple
+        De 576px en adelante se aplica
+
+        navbar
+        Es utilizada para crear un menú de navegación responsivo en un sitio web. Con la clase "navbar" se pueden definir diferentes estilos para el menú, como su posición, tamaño, color de fondo y tipografía.
+
+        navbar-expand-sm
+        Se utiliza para expandir automáticamente el menú de navegación a una vista de estilo de menú hamburguesa (conocido como "hamburger menu" en inglés) en pantallas pequeñas.
+
+        Esto significa que si el tamaño de la pantalla es menor o igual a 576px, el menú de navegación se ocultará detrás de un botón desplegable con el ícono de las tres líneas (hamburguesa) y se mostrará solo cuando se haga clic en ese botón.
+
+        navbar-light
+        Se utiliza para definir un estilo de menú de navegación con fondo claro y texto oscuro. Es una de las dos opciones de estilo predefinidas para el menú de navegación, la otra es navbar-dark.
+        -->
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <div class="container">
+                <!--
+                    navbar-brand
+                    Se utiliza para definir la marca o el logotipo de un sitio web en un menú de navegación.
+                    
+                    El elemento <a> con la clase navbar-brand se utiliza para definir la marca del sitio, y se puede hacer clic en ella para volver a la página principal del sitio.
+                -->
+                <a class="navbar-brand" href="#">Navbar</a>
+                <ul class="navbar-nav">
+                    <!--
+                        nav-item
+                        Se utiliza para definir los elementos del menú de navegación.
+                    -->
+                    <li class="nav-item">
+                        <!--
+                            nav-link
+                            Se utiliza para estilizar los enlaces en los elementos del menú de navegación, como los elementos <a> dentro de los elementos <li> con la clase nav-item.
+                        -->
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Empresa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--
+        Barra navbar toogle
+        De 1199px hacia abajo se aplica
+        -->
+        <nav class="navbar navbar-expand-xl navbar-light bg-light mt-4">
+            <div class="container">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <!--
+                    navbar-toggler
+                    Se utiliza la clase navbar-toggler en el elemento <button> para crear un botón de alternancia de menú. El botón de alternancia de menú muestra un icono de hamburguesa predeterminado, que se puede personalizar aún más con CSS personalizado.
+                
+                    data-toggle="collapse": Se utiliza para mostrar u ocultar un elemento cuando se hace clic en un botón o enlace. Este valor se utiliza con el atributo data-target para especificar el elemento que se debe mostrar u ocultar.
+
+                    data-target
+                    Se utiliza en combinación con el atributo data-toggle y se utiliza para especificar el destino de la acción que se desencadena al hacer clic en un botón, enlace u otro elemento interactivo.
+
+                    El valor del atributo data-target es un selector CSS que apunta al elemento que se debe mostrar, ocultar o manipular al hacer clic en el elemento interactivo con el atributo data-toggle.
+
+                    navbarNav 
+                    Valor del atributo id definido en el tag div
+                -->
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                    <!--
+                        navbar-toggler-icon
+                        Se utiliza para agregar un icono de hamburguesa en el botón del menú de navegación (navbar-toggler). Este icono se utiliza comúnmente para mostrar u ocultar el menú de navegación en dispositivos móviles o pantallas pequeñas.
+                    -->
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--navbarNav se utiliza como valor del atributo data-target definido en el tag button-->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Empresa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--
+        Barra navbar con formularo
+        De 576px en adelante se aplica
+        -->
+        <nav class="navbar navbar-expand-sm navbar-light bg-light mt-4">
+            <div class="container">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <!--navbarNav valor del atributo id definido en el tag div-->
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--navbarNav se utiliza como valor del atributo data-target definido en el tag button-->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Empresa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                    </ul>
+
+                    <!--
+                        form-inline
+                        Se utiliza para crear formularios en línea. Esto significa que los elementos del formulario, como las etiquetas, los campos de entrada y los botones, se mostrarán en una sola línea en lugar de apilarse verticalmente.
+                    -->
+                    <form class="form-inline">
+                        <!--
+                            form-control
+                            Se utiliza para dar estilo a los elementos de entrada de formularios y hacer que se vean consistentes y atractivos en toda la página.
+                        -->
+                        <input class="form-control" type="text" placeholder="Buscar">
+                        <button class="btn btn-outline-info">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!--
+        Barra navbar con emergente o dropdown
+        De 576px en adelante se aplica
+        -->
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Empresa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Servicios</a>
+                    </li>
+                    <!--
+                        dropdown
+                        Se utiliza para crear menús desplegables en la página web. Estos menús desplegables suelen estar compuestos por un botón o enlace que se puede hacer clic para desplegar un menú con opciones adicionales.
+
+                        Para crear un menú desplegable con la clase dropdown en Bootstrap 4, se necesitan tres elementos HTML: el botón o enlace que se hace clic para desplegar el menú, el menú desplegable en sí y las opciones dentro del menú.
+                    -->
+                    <li class="nav-item dropdown">
+                        <!--
+                            dropdown-toggle
+                            Se utiliza para crear un botón o enlace que, cuando se hace clic, despliega un menú desplegable de opciones. Esta clase es esencial para el funcionamiento de los menús desplegables en Bootstrap 4.
+
+                            data-toggle="dropdown" 
+                            Este atributo se utiliza para activar el menú desplegable cuando se hace clic en el botón o enlace.
+                        -->
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                            Dropdown
+                        </a>
+                        <!--
+                            dropdown-menu
+                            Se utiliza para definir el contenedor de los elementos del menú desplegable creado con la clase dropdown y dropdown-toggle.
+                            
+                            Los elementos dentro de la clase dropdown-menu se muestran de manera vertical cuando se despliega el menú desplegable.
+                        -->
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Enlace 1</a>
+                            <a href="#" class="dropdown-item">Enlace 2</a>
+                            <a href="#" class="dropdown-item">Enlace 3</a>
+                            <a href="#" class="dropdown-item">Enlace 4</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--
+        Barra navbar colores
+        De 576px en adelante se aplica
+        -->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Empresa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--
+        Barra navbar primary
+        De 576px en adelante se aplica
+        -->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-primary mt-5">
+            <div class="container">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Empresa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav class="navbar fixed-top navbar-dark bg-dark">
+            <a href="#" class="navbar-brand">Barra de Fija</a>
+        </nav>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    </body>
+</html>
